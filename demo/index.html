@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo{
+            width: 40%;
+            float: left;
+        }
+        .nav{
+            width: 60%;
+            float: left;
+        }
+        .nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav ul li{
+            display: inline-block;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            padding: 30px 20px;
+            display: inline-block;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .main-content {
+    padding: 100px 0;
+}
+main {
+    height: 100vh;
+
+}
+img.curly-girl {
+    position: absolute;
+    bottom: 0;
+    right: 12%;
+    height: 95vh;
+}
+.arrow {
+    height: 0px;
+    width: 200px;
+    border-bottom: 2px dotted red;
+    position: relative;
+}
+
+.arrow::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid red;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+}
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="https://www.google.co.uk/">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <!-- header -->
+    
+        <section>
+            <div class="container">
+                <div class="main-content">
+                    <h1>We Design Amzing <br>
+                        Experoence for You</h1>
+                        <p>Template is a Professional Webflow template
+                            with multiple sections.</p>
+                </div>
+
+                <div class="arrow">
+
+                </div>
+
+
+            </div>
+            <img class="curly-girl" src="beautiful-curly-girl-pointing-finger.png" alt="">
+        </section>
+    </main>
+
+</body>
+</html>
